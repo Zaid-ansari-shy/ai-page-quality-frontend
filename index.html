@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Page Quality Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Page Quality Analyzer</h1>
+    <p>Paste a webpage URL to analyze Page Quality</p>
+
+    <input type="text" id="urlInput" placeholder="Enter webpage URL">
+    <button onclick="analyzePage()">Analyze Page Quality</button>
+
+    <div id="result" class="result hidden">
+      <h2>Analysis Result</h2>
+
+      <p><b>Page Purpose:</b> <span id="purpose"></span></p>
+      <p><b>YMYL:</b> <span id="ymyl"></span></p>
+      <p><b>Reputation:</b> <span id="reputation"></span></p>
+      <p><b>Main Content Quality:</b> <span id="mc"></span></p>
+      <p><b>E-E-A-T:</b> <span id="eeat"></span></p>
+      <p class="final"><b>Overall Page Quality:</b> <span id="pq"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
